@@ -226,6 +226,66 @@ nav ul li a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Login/Signup Form */
+.login-signup-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff523b;
+}
+
+.login-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#toggleText {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#toggleText a {
+    color: #ff523b;
+    font-weight: 500;
+}
+
+#toggleText a:hover {
+    text-decoration: underline;
+}
+
 /* Animation */
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
@@ -397,6 +457,10 @@ nav ul li a:hover {
     .team-card img {
         height: 150px;
     }
+
+    .login-signup-form {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -418,5 +482,18 @@ nav ul li a:hover {
 
     .team-card img {
         height: 120px;
+    }
+
+    .login-signup-form {
+        padding: 15px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-group label {
+        font-size: 14px;
     }
 }
